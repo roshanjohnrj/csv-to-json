@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Distribution</title>
+</head>
+<body>
+    <h1>Age Distribution</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Age-Group</th>
+                <th>Distribution(count)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% ageDistribution.forEach(row => { %>
+                <tr>
+                    <td><%= row.age_range %></td>
+                    <td><%= row.count %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>
